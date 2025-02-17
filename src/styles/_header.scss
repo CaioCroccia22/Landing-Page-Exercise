@@ -1,0 +1,28 @@
+.header{
+    width: 100vw;
+    
+    .navmenu{
+        max-width: 20%;
+
+        &__links{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    
+            &__item{
+                
+                a{
+                    text-decoration: none;
+
+                    img {
+                        width: 30px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,58 @@
+.header {
+  width: 100vw;
+}
+.header .navmenu {
+  max-width: 20%;
+}
+.header .navmenu__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header .navmenu__links__item a {
+  text-decoration: none;
+}
+.header .navmenu__links__item a img {
+  width: 30px;
+}
+
+.hero {
+  height: 60vh;
+  padding: 100px 0 0 50px;
+  display: flex;
+}
+.hero__logo img {
+  width: 600px;
+  border-radius: 10%;
+}
+.hero__description {
+  padding: 20px 0 0 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url(../img/Scarface-banner.jpg);
+  background-size: cover;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
