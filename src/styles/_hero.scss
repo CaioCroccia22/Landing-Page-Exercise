@@ -1,18 +1,44 @@
 .hero{
-    height: 60vh;
+    height: 100vh;
+    width: 100vw;
     padding: 100px 0 0 50px;
     display: flex;
+    
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+    }
+
+    &__logo,
+    &__description {
+    position: relative;
+    z-index: 2; 
+}
+
 
     &__logo{
         
         img{
-            width: 600px;
+            width: 400px;
             border-radius: 10%;
         }
     }
 
     &__description{
         padding: 20px 0 0 20px;
+
+        &__icon{
+            display: flex;
+            max-width: 10%;
+            justify-content: space-between;
+        }
+
     }
 
 }
