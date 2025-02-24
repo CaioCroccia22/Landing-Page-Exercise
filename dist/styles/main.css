@@ -1,6 +1,7 @@
 .header {
   width: 100%;
   height: 5vh;
+  padding-top: 20px;
   border: none;
   display: flex;
   justify-content: center;
@@ -31,8 +32,7 @@
   text-decoration: none;
   color: #fff;
   font-family: sans-serif;
-  font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
 }
 .header__icons {
   display: flex;
@@ -62,7 +62,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   z-index: 1;
 }
 .hero__logo, .hero__description {
@@ -101,14 +101,41 @@
   z-index: 2;
   display: flex;
   justify-content: flex-end;
-  width: 65vw;
+  text-align: center;
+  align-items: center;
+  width: 80vw;
+}
+.hero__content__buttons__item {
+  margin: 20px;
+}
+.hero__content__buttons__item img {
+  height: 50px;
+  display: block;
+}
+.hero__content__buttons__item:hover {
+  transition: transform ease 0.5s;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.hero__content__buttons__item--is-active {
+  background-color: #F40411;
+  border-radius: 20px;
+}
+.hero__content__buttons__item--is-active img {
+  display: block;
+}
+.hero__content__buttons__item--is-active img:hover {
+  background-color: #790A22;
+  border-radius: 20px;
+  transition: transform ease-in 0.5s;
+  cursor: pointer;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", serif;
 }
 
 body {
@@ -128,18 +155,24 @@ li {
 a {
   text-decoration: none;
 }
+a:hover {
+  transition: transform ease 0.5s;
+  transform: scale(10);
+  cursor: pointer;
+}
 
 .title--big {
-  font-size: 36px;
   color: #fff;
   text-shadow: rgba(0, 0, 0, 0.8);
   line-height: 2;
 }
 
+.text--big {
+  font-family: "Montserrat";
+}
+
 .text {
-  font-size: 16px;
-  color: #fff;
-  font-weight: bold;
+  font-family: "Montserrat";
   line-height: 1.5;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
   margin: 10px;
