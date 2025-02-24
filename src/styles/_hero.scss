@@ -1,43 +1,39 @@
 .hero{
+    
     height: 100vh;
     width: 100vw;
     padding: 100px 0 0 50px;
     display: flex;
     
     &::before{
+        
         content: "";
         position: absolute;
         top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.73);
         z-index: 1;
-    }
-
-    &__logo,
-    &__description {
-    position: relative;
-    z-index: 2; 
     }
 
     &__content{
         position: relative;
         z-index: 2; 
         display: flex;
+        align-items: center;
+        justify-content: flex-start;
         flex-direction: column;
+        width: 85vw;
        
         
         
         &__title{
 
             display: flex;
-            position: relative;
-            z-index: 2; 
             justify-content: flex-end;
             align-items: baseline;
             width: 85vw;
-            // margin-left: 300px;
             height: 15vh;
             margin-bottom: 50px;
     
@@ -60,7 +56,7 @@
         }
     
         &__buttons{
-            z-index: 2;
+           
             display: flex;
             justify-content: flex-end;
             text-align: center;
@@ -102,5 +98,18 @@
                 }
             } 
         }
+
+
+        &__description{
+            display: flex;
+            justify-content: end;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: left;
+            max-width: 43vw;
+            margin-left: auto;
+        }
     }
+
+    
 }
