@@ -1,6 +1,7 @@
 @use 'var';
 @use 'header';
 @use 'hero';
+@use 'recommended';
 
 
 *{
@@ -12,16 +13,7 @@
 }
 
 
-body{
-    background-image: url(../img/Scarface-Wallpaper.jpeg);
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    
-}
+
 
 li{
     list-style: none;
