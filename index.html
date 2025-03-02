@@ -6,14 +6,12 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <div class="header__brand">
-            Assista Filmes
-        </div>
         <nav class="navmenu">
             <ul class="navmenu__links">
                 <li class="navmenu__links__item">
@@ -49,9 +47,9 @@
         </div>
     </header>
     <section class="hero">
-        <!-- <div class="hero__logo">
+        <div class="hero__logo">
             <img src="./dist/img/scarface.png" alt="">
-        </div> -->
+        </div>
         <div class="hero__content">
             <div class="hero__content__title">
                 <img class="hero__content__title__img" src="./dist/img/Scarface-title-removebg.png" alt="Titulo Scarface">
@@ -91,25 +89,27 @@
         </div>
     </section>
     <section class="recommended">
+        <!-- -----------Menu de navegação da aba de recomendados------------------------ -->
         <nav class="recommended__navmenu">
             <ul class="recommended__navmenu__links">
                 <li class="recommended__navmenu__links__item">
-                   <a href="#">
+                   <a data-tab-button="Terror" href="#">
                         Terror
                    </a>
                 </li>
-                <li class="recommended____links__item">
-                    <a href="">
+                <li class="recommended__navmenu__links__item">
+                    <a href="" data-tab-button="Suspense" >
                         Suspense
                     </a>
                 </li>
-                <li class="recommended____links__item">
-                    <a href="">
+                <li class="recommended__navmenu__links__item">
+                    <a href="" data-tab-button="Action" >
                         Action
                     </a>
                 </li>
             </ul>
         </nav>
+        <!----------- Imagens de filmes recomendados -------------------------------- -->
         <ul data-tab-id="Terror" class="recommended__list recommended__list--is-active">
             <li class="recommended__list__item">
                 <img src="./dist/img/Poster Cartaz Babel.jpeg" alt="desencantada">
@@ -120,19 +120,16 @@
             <li class="recommended__list__item">
                 <img src="./dist/imG/GoodFather.jpeg" alt="desencantada">
             </li>
-            <li class="recommended__list__item">
-                <img src="./dist/img/Poster Cartaz O Corvo B.jpeg" alt="desencantada">
-            </li>
         </ul>
         <ul data-tab-id="Suspense" class="recommended__list">
             <li class="recommended__list__item">
-                <img src="./dist/img/Poster Cartaz La casa de papel B.jpeg" alt="desencantada">
+                <img src="./dist/img/Poster Cartaz O Brutalista A.jpeg" alt="desencantada">
             </li>
             <li class="recommended__list__item">
                 <img src="./dist/img/Poster Cartaz O Corvo B.jpeg" alt="desencantada">
             </li>
             <li class="recommended__list__item">
-                <img src="./dist/img/Poster Cartaz Rambo 3.jpeg" alt="desencantada">
+                <img src="./dist/img/Cartaz de Feito na América, 31 de Agosto nos cinemas_.jpeg" alt="desencantada">
             </li>
         </ul>
         <ul data-tab-id="Action" class="recommended__list">

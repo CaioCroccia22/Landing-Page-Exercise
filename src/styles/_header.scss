@@ -31,6 +31,8 @@
         width: 950px;
         z-index: 2;
         position: relative ;
+        overflow: visible;
+        
         
     
         &__links{
@@ -43,12 +45,22 @@
             
     
             &__item{
-                
-                a{
+                transition: transform ease 0.5s; /* Mover para cá */
+
+                &:hover {
+                    transform: scale(1.2); /* Aumenta levemente o tamanho */
+                    cursor: pointer;
+                }
+
+                a {
                     text-decoration: none;
                     color: #fff;
-                    font-family: sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
                     font-size: 20px;
+                    
+                
+                    
                 }
             }
         }

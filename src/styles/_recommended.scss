@@ -1,52 +1,86 @@
 .recommended{
-    background: linear-gradient(to bottom, #222 0%, #000 100%);
-    
+    // background: linear-gradient(to bottom, #222 0%, #000 100%);
+    background: linear-gradient(to bottom, #0F0A04 20%, #191009 80%, #241A11 3%);
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
     color: white;
     z-index: 2;
     position: relative;
-
+    
+    // Navegação --------------------------------
     &__navmenu{
 
         width: 100vw;
         display: flex;
         justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid #fff;
 
         &__links{
             width: 60%;
             display: flex;
-            
             justify-content: space-between;
             padding: 0;
             margin: 0;
             list-style: none;
+            
+            
+
+            &__item{
+                transition: transform ease 0.5s;
+
+                &--is-active{
+                    display: list-item;
+
+                }
+
+                &:hover{
+                    transform: scale(1.2);
+                    
+                    
+                }
+            }
 
             a{
                 text-decoration: none;
                 color: white; /* Ajuste conforme necessário */
-                font-size: 18px;
-                font-weight: bold;
-            }
-
-            
+                font-size: 20px;
+                
+            } 
         }
     }
-
+    // Imagens----------------------------------------
     &__list{    
+
+        margin-top: 44px;
+        opacity: 0;
         display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        transition: opacity 0.5s ease;
+
 
         &--is-active{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100vw;
-        }
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            opacity: 1;
+            }
+
 
         &__item{
             margin: 50px;
+            
 
             img{
-                width: 200px;
-                height: 300px
+                width: 250px;
+                height: 400px;
+                border-radius: 18px;
+                transition: transform ease-in 0.5s;
+
+                &:hover{
+                    transform: scale(1.2);
+                }
             }
         }
     }
