@@ -1,9 +1,22 @@
 console.log('Ola Mundo');
 const filmButtons = document.getElementsByClassName('hero__content__buttons__item');
-// console.log(filmButtons);
 const recommendedButtons = document.querySelectorAll('[data-tab-button]');
-// console.log(recommendedButtons);
+const header = document.querySelector('#header');
 
+
+// Evento para selecionar a altura do header-------------------------------------------
+window.addEventListener('scroll', function(){
+    const scrollHeight = window.scrollY; //captura a posição do scroll
+    if (scrollHeight > 200){
+        console.log('Altura maior que 1000');
+        header.style.backgroundColor = 'black';
+    } else{
+        header.style.backgroundColor = 'transparent'
+    }
+})
+
+
+// Evento para trocar as classes dos botão de filme-----------------------------------------------
 Array.from(filmButtons).forEach(button => {
     button.addEventListener("click", function(e){
         Array.from(filmButtons).forEach (btn => btn.classList.remove('hero__content__buttons__item--is-active'))
@@ -14,6 +27,7 @@ Array.from(filmButtons).forEach(button => {
     }
 )
 
+// Evento para trocar a classe dos botões de recomendados-------------------------------
 Array.from(recommendedButtons).forEach(buttonRecommended => {
     // ButtonRecommended -> é cada elemento individualmente dentro dessa nodeList
     buttonRecommended.addEventListener('click', function(event){

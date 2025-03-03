@@ -1,0 +1,31 @@
+@use 'var';
+
+.footer{
+    background: linear-gradient(135deg, #000000 10% ,#040303 20%, #0F0A04 80%,);
+    border-bottom: 1px solid ;
+
+    &__content{
+        padding: 30px;
+
+        &__text{
+
+            width: 80%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #FFF;
+            font-family: var.$textfont;
+        }
+
+        &__copyright{
+            padding: 30px;
+            color: #FFF;
+            font-family: var.$textfont;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

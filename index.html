@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <nav class="navmenu">
             <ul class="navmenu__links">
                 <li class="navmenu__links__item">
@@ -46,103 +46,124 @@
             <img src="./dist/img/icons8-user-48.png" alt="Icone de usuário">
         </div>
     </header>
-    <section class="hero">
-        <div class="hero__logo">
-            <img src="./dist/img/scarface.png" alt="">
-        </div>
-        <div class="hero__content">
-            <div class="hero__content__title">
-                <img class="hero__content__title__img" src="./dist/img/Scarface-title-removebg.png" alt="Titulo Scarface">
-                <div class="hero__content__title__rating">
-                    <img src="./dist/img/rating (2).png" alt="Avaliação do filme">
+    <div class="background-container">
+        <section class="hero">
+            <div class="hero__logo">
+                <img src="./dist/img/scarface.png" alt="">
+            </div>
+            <div class="hero__content">
+                <div class="hero__content__title">
+                    <img class="hero__content__title__img" src="./dist/img/Scarface-title-removebg.png" alt="Titulo Scarface">
+                    <div class="hero__content__title__rating">
+                        <img src="./dist/img/rating (2).png" alt="Avaliação do filme">
+                    </div>
+                </div>
+                <div class="hero__content__buttons">
+                    <div class="hero__content__buttons__item">
+                        <img src="./dist/img/play button.png" alt="Icone Play">
+                    </div>
+                    <div class="hero__content__buttons__item">
+                        <img src="./dist/img/My List2.png" alt="Icone Favoritos">
+                    </div>
+                    <div class="hero__content__buttons__item">
+                        <img src="./dist/img/Episodes (2).png" alt="Icones Episodios">
+                    </div>
+                </div>
+                <div class="hero__content__description">
+                    <p class="text--big">
+                        Sipnose
+                    </p>
+                    <p class="text">
+                        1980. Tony Montana, rifugiato cubano arrivato a Miami con l'amico Manny Ribera, 
+                        realizza il sogno americano scalando rapidamente le
+                        gerarchie del narcotraffico: 
+                        prima si mette al servizio del boss Frank Lopez, 
+                        poi, grazie all'intraprendenza e alla mancanza di 
+                        scrupoli, scalza il suo capo dal trono, gli ruba la
+                        bellissima fidanzata Elvira e insieme con Manny 
+                        avvia un impero del crimine facendo affari con lo 
+                        spacciatore boliviano Alejandro Sosa. Paranoico, 
+                        tossicodipendente e schiavo della gelosia verso la
+                        sorella Gina, finirà per autodistruggersi e perdere nel modo più violento e spettacolare possibile tutto ciò che ha costruito.
+                    </p>
                 </div>
             </div>
-            <div class="hero__content__buttons">
-                <div class="hero__content__buttons__item">
-                    <img src="./dist/img/play button.png" alt="Icone Play">
-                </div>
-                <div class="hero__content__buttons__item">
-                    <img src="./dist/img/My List2.png" alt="Icone Favoritos">
-                </div>
-                <div class="hero__content__buttons__item">
-                    <img src="./dist/img/Episodes (2).png" alt="Icones Episodios">
-                </div>
-            </div>
-            <div class="hero__content__description">
-                <p class="text--big">
-                    Sipnose
-                </p>
-                <p class="text">
-                    1980. Tony Montana, rifugiato cubano arrivato a Miami con l'amico Manny Ribera, 
-                    realizza il sogno americano scalando rapidamente le
-                    gerarchie del narcotraffico: 
-                    prima si mette al servizio del boss Frank Lopez, 
-                    poi, grazie all'intraprendenza e alla mancanza di 
-                    scrupoli, scalza il suo capo dal trono, gli ruba la
-                    bellissima fidanzata Elvira e insieme con Manny 
-                    avvia un impero del crimine facendo affari con lo 
-                    spacciatore boliviano Alejandro Sosa. Paranoico, 
-                    tossicodipendente e schiavo della gelosia verso la
-                    sorella Gina, finirà per autodistruggersi e perdere nel modo più violento e spettacolare possibile tutto ciò che ha costruito.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="recommended">
-        <!-- -----------Menu de navegação da aba de recomendados------------------------ -->
-        <nav class="recommended__navmenu">
-            <ul class="recommended__navmenu__links">
-                <li class="recommended__navmenu__links__item">
-                   <a data-tab-button="Terror" href="#">
-                        Terror
-                   </a>
+        </section>
+        <section class="recommended">
+            <!-- -----------Menu de navegação da aba de recomendados------------------------ -->
+             <h1 class="recommended-title title--big">
+                Filmes recomendados
+             </h1>
+            <nav class="recommended__navmenu">
+                <ul class="recommended__navmenu__links">
+                    <li class="recommended__navmenu__links__item">
+                       <a data-tab-button="Terror" href="#">
+                            Terror
+                       </a>
+                    </li>
+                    <li class="recommended__navmenu__links__item">
+                        <a href="" data-tab-button="Suspense" >
+                            Suspense
+                        </a>
+                    </li>
+                    <li class="recommended__navmenu__links__item">
+                        <a href="" data-tab-button="Action" >
+                            Action
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!----------- Imagens de filmes recomendados -------------------------------- -->
+            <ul data-tab-id="Terror" class="recommended__list recommended__list--is-active">
+                <li class="recommended__list__item">
+                    <img src="./dist/img/Poster Cartaz Babel.jpeg" alt="desencantada">
                 </li>
-                <li class="recommended__navmenu__links__item">
-                    <a href="" data-tab-button="Suspense" >
-                        Suspense
-                    </a>
+                <li class="recommended__list__item">
+                    <img src="./dist/img/300.jpeg" alt="desencantada">
                 </li>
-                <li class="recommended__navmenu__links__item">
-                    <a href="" data-tab-button="Action" >
-                        Action
-                    </a>
+                <li class="recommended__list__item">
+                    <img src="./dist/imG/GoodFather.jpeg" alt="desencantada">
                 </li>
             </ul>
-        </nav>
-        <!----------- Imagens de filmes recomendados -------------------------------- -->
-        <ul data-tab-id="Terror" class="recommended__list recommended__list--is-active">
-            <li class="recommended__list__item">
-                <img src="./dist/img/Poster Cartaz Babel.jpeg" alt="desencantada">
-            </li>
-            <li class="recommended__list__item">
-                <img src="./dist/img/300.jpeg" alt="desencantada">
-            </li>
-            <li class="recommended__list__item">
-                <img src="./dist/imG/GoodFather.jpeg" alt="desencantada">
-            </li>
-        </ul>
-        <ul data-tab-id="Suspense" class="recommended__list">
-            <li class="recommended__list__item">
-                <img src="./dist/img/Poster Cartaz O Brutalista A.jpeg" alt="desencantada">
-            </li>
-            <li class="recommended__list__item">
-                <img src="./dist/img/Poster Cartaz O Corvo B.jpeg" alt="desencantada">
-            </li>
-            <li class="recommended__list__item">
-                <img src="./dist/img/Cartaz de Feito na América, 31 de Agosto nos cinemas_.jpeg" alt="desencantada">
-            </li>
-        </ul>
-        <ul data-tab-id="Action" class="recommended__list">
-            <li class="recommended__list__item">
-                <img src="./dist/img/Poster Cartaz X-Men Origens Wolverine B.jpeg" alt="desencantada">
-            </li>
-            <li class="recommended__list__item">
-                <img src="./dist/img/Rocky.jpeg" alt="desencantada">
-            </li>
-            <li class="recommended__list__item">
-                <img src="./dist/img/Poster Cartaz Rambo 3.jpeg" alt="desencantada">
-            </li>
-        </ul>
+            <ul data-tab-id="Suspense" class="recommended__list">
+                <li class="recommended__list__item">
+                    <img src="./dist/img/Poster Cartaz O Brutalista A.jpeg" alt="desencantada">
+                </li>
+                <li class="recommended__list__item">
+                    <img src="./dist/img/Poster Cartaz O Corvo B.jpeg" alt="desencantada">
+                </li>
+                <li class="recommended__list__item">
+                    <img src="./dist/img/Cartaz de Feito na América, 31 de Agosto nos cinemas_.jpeg" alt="desencantada">
+                </li>
+            </ul>
+            <ul data-tab-id="Action" class="recommended__list">
+                <li class="recommended__list__item">
+                    <img src="./dist/img/Poster Cartaz X-Men Origens Wolverine B.jpeg" alt="desencantada">
+                </li>
+                <li class="recommended__list__item">
+                    <img src="./dist/img/Rocky.jpeg" alt="desencantada">
+                </li>
+                <li class="recommended__list__item">
+                    <img src="./dist/img/Poster Cartaz Rambo 3.jpeg" alt="desencantada">
+                </li>
+            </ul>
+        </section>
+    </div>
+    <section class="footer">
+        <footer class="footer__content">
+            <div class="footer__content__text">
+                <p>Politica de Privacidade</p>
+                <p>Termos de Uso</p>
+                <p>Aviso de Direitos de Privacidade do Brasil</p>
+                <p>Política de cookies</p>
+                <p>Proteção de Dados no Brasil</p>
+                <p>Contrato de Assinatura</p>
+                <p>Ajuda</p>
+            </div>
+            <div class="footer__content__copyright">
+                <p>&copy; 2025 Scarface. Todos os direitos reservados.</p>
+            </div>
+        </footer>
     </section>
     <script src="./src/js/script.js" defer></script>
 </body>
