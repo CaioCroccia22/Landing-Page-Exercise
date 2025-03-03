@@ -1,20 +1,27 @@
 .recommended{
     min-height: 100vh;
-    // background: linear-gradient(to right, rgb(26, 29, 41), rgba(26, 26, 26, 0));
     align-items: center;
     color: white;
     z-index: 2;
     position: relative;
+
+    &__title{
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+    }
     
     // Navegação --------------------------------
     &__navmenu{
 
-        width: 100vw;
+        width: 80vw;
         display: flex;
         justify-content: center;
         padding-top: 30px;
         padding-bottom: 30px;
+        margin: auto;
         border-bottom: 2px solid #fff;
+        
 
         &__links{
             width: 60%;
@@ -23,6 +30,7 @@
             padding: 0;
             margin: 0;
             list-style: none;
+            
             
             
 

@@ -2,7 +2,7 @@
 
 .header{
     width: 100%;
-    height: 8vh;
+    height: 6vh;
     min-height: 50px;
     padding: 10 0px;
     top: 0;
@@ -13,6 +13,7 @@
     position: fixed;
     background: transparent; /* Fundo preto semi-transparente */
     z-index: 100;
+    border-radius: 0px 0px 20px 0px;
     
 
     &__brand{

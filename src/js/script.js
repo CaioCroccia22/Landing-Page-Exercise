@@ -9,7 +9,7 @@ window.addEventListener('scroll', function(){
     const scrollHeight = window.scrollY; //captura a posição do scroll
     if (scrollHeight > 200){
         console.log('Altura maior que 1000');
-        header.style.backgroundColor = 'black';
+        header.style.backgroundColor = '#15161D-';
     } else{
         header.style.backgroundColor = 'transparent'
     }

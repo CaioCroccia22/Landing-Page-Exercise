@@ -37,22 +37,25 @@ a{
     font-family: var.$textfont;
     font-size: 32px;
     color: #fff;
-    text-shadow: rgba(0, 0, 0, 0.8);
+    // text-shadow: rgba(0, 0, 0, 0.8);
+    font-weight: normal;
 }
 
 .text--big{
     font-family: var.$textfont;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 500; 
     color: #fff;
     text-shadow: rgba(0, 0, 0, 0.8);
 }
 
 
 .text{
-    font-family: var.$textfont;
-    line-height: 1.5;
-    font-size: 18px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-    margin: 10px;
     color: #fff;
+    font-family: var.$textfont;
+    font-weight: 550; 
+    font-size: 18px;
+    line-height: 157.4%;
+    text-align: left; /* Ajuste conforme necessário */
+    
 }
