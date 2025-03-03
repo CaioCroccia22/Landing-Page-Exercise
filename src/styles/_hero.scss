@@ -25,6 +25,8 @@
         display: block;
         width: 35vw;
         margin-left: 20px;
+        z-index: 2;
+        position: relative;
     }
 
     &__content{

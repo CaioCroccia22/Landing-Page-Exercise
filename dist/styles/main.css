@@ -86,6 +86,8 @@
   display: block;
   width: 35vw;
   margin-left: 20px;
+  z-index: 2;
+  position: relative;
 }
 .hero__content {
   position: relative;
@@ -151,8 +153,7 @@
 }
 
 .recommended {
-  background: linear-gradient(to bottom, #0F0A04 20%, #191009 80%, #241A11 3%);
-  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #000000 10%, #040303 20%, #0F0A04 80%);
   color: white;
   z-index: 2;
   position: relative;
@@ -178,6 +179,13 @@
 }
 .recommended__navmenu__links__item--is-active {
   display: list-item;
+  box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
+  transform: scale(1.1); /* Aumenta o tamanho */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.recommended__navmenu__links__item--is-active:after {
+  transform: scaleX(1); /* Quando ativo, a borda aparece */
+  transform-origin: bottom left; /* Faz a animação acontecer da esquerda para a direita */
 }
 .recommended__navmenu__links__item:hover {
   transform: scale(1.2);
