@@ -2,6 +2,8 @@ const gulp = require('gulp');
 const {parallel, src, dest} = require('gulp');
 const imagemin = require('gulp-imagemin');
 const sass = require('gulp-sass') (require('sass'));
+var uglify = require('gulp-uglify');
+
 
 
 // Compilação do SASS para CSS
@@ -24,8 +26,14 @@ function watchFiles(){
     gulp.watch('src/styles/*.scss', buildStyles)
 }
 
+function reduceJs() {
+    return gulp.src('src/js/*.js')
+        .pipe(uglify())
+        .pipe(dest('dist/js'))
+}
 
+module.exports.reduceJs = reduceJs;
 module.exports.watch = watchFiles;
 module.exports.buildStyles = buildStyles;
 module.exports.reduceImage = reduceImage;
-module.exports.default = parallel(watchFiles, buildStyles, reduceImage);
+module.exports.default = parallel(watchFiles, buildStyles, reduceImage, reduceJs);

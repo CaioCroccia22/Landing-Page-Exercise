@@ -16,6 +16,12 @@
             justify-content: space-between;
             color: #FFF;
             font-family: var.$textfont;
+
+            @media (max-width: 1600px){
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
         }
 
         &__copyright{

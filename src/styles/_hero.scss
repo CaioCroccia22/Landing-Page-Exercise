@@ -5,6 +5,7 @@
     min-height: 200vh;
     display: flex;
     flex-direction: column;
+    position: relative;
 
     &::before{
         content: "";
@@ -15,6 +16,10 @@
         height: 200vh;
         background: rgba(0, 0, 0, 0.4);
         z-index: 1;
+
+        @media (max-width: 1600px){
+            height: 400vh;
+        }
     }
 }
 
@@ -25,15 +30,23 @@
     align-items: center;
     justify-content: center;
     
+    @media (max-width: 1600px){
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
     
     
 
     &__logo{
         display: block;
         width: 35vw;
-        // margin-left: 20px;
         z-index: 2;
         position: relative;
+
+        @media (max-width: 1600px){
+            display: none;
+        }
 
         img{
             height: 700px;
@@ -49,6 +62,14 @@
         justify-content: flex-start;
         flex-direction: column;
         width: 60vw;
+
+        @media (max-width: 1600px){
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+        
+        }
        
         
         
@@ -69,6 +90,20 @@
                 height: 60px;
                 width: 120px;
             }
+
+            @media (max-width: 1600px){
+                 
+                
+                & img:first-child{
+                    height: 70px;
+                    width: 250px;
+                }
+    
+                & img:last-child{
+                    height: 40px;
+                    width: 60px;
+                }
+            }
     
         }
     
@@ -80,6 +115,14 @@
             height: 15vh;
             margin-bottom: 20px;
             border-bottom: 4px solid #fff;
+
+            @media (max-width: 1600px){
+                display: flex;
+                flex-direction: column; 
+                align-items: center;  
+                border: none;     
+                margin-bottom: 100px;  
+            }
 
             &__item{
                 margin: 20px;
@@ -130,6 +173,11 @@
             text-align: left;
             
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+
+            @media (max-width: 1600px){
+                max-width: 400px;
+                margin-top: 100px;
+            }
         
             &__icons{
                 width: 10vw;

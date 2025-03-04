@@ -56,6 +56,10 @@ a{
     font-weight: 550; 
     font-size: 18px;
     line-height: 157.4%;
-    text-align: left; /* Ajuste conforme necessário */
+    text-align: left; /* Ajuste conforme necessário */ 
+
+    @media (max-width: 1600px){
+        font-size: 12px;     
+    }
     
 }
