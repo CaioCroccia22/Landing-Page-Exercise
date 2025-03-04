@@ -93,7 +93,7 @@
 }
 @media (max-width: 768px) {
   .background-container::before {
-    height: 400vh;
+    height: 310vh;
   }
 }
 
