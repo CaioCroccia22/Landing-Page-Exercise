@@ -33,7 +33,7 @@ function reduceJs() {
 }
 
 module.exports.reduceJs = reduceJs;
-module.exports.watch = watchFiles;
+// module.exports.watch = watchFiles;
 module.exports.buildStyles = buildStyles;
 module.exports.reduceImage = reduceImage;
-module.exports.default = parallel(watchFiles, buildStyles, reduceImage, reduceJs);
+module.exports.default = parallel(buildStyles, reduceImage, reduceJs);
